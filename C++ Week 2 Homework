@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << "\nHello, Happy New Year, Welcome to the wage calculator\n";
+
+  float salary,yearly,rise,amount,year;
+
+  cout<<"\nSo, How much do you earn in a month? (and I will then tell you how much you earn in a year, and how much you would get if you got a 10% pay rise too)";
+  cin >>salary;
+  yearly=salary*12;
+  rise=salary*.1;
+  salary=salary+rise;
+
+  cout<<"\nThat means you earn £" <<yearly<< " in a year";
+  cout<<"\n\nIf you get a 10% pay rise your new monthly income would be £" <<salary<<"per month";
+  cout<<"\n\nIf you get a 10% pay rise your new yearly income would rise to £" <<salary*12<< " in a year";
+
+  cout<<"\n\nSo, How much WOULD YOU LIKE TO EARN in a month?";
+  cin >>amount;
+  year=amount*12;
+
+  cout<<"\nWow, that would mean you would earn £" <<year<< " per year, well done, we should all be so lucky to earn that amount ";
+
+} 
